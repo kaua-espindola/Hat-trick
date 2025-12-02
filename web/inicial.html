@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hat-Trick</title>
+  <link rel="icon" href="../assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="/web/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="/web/inicial.html">
+        <img src="/assets/logo.png" alt="Logo Goal" />
+      </a>
+    </div>
+    <div class="barra-pesquisa">
+      <input type="text" placeholder="Buscar jogadores, clubes, partidas..." />
+    </div>
+    <nav>
+      <a class="nav-button" href="/web/inicial.html">Início</a>
+      <div class="dropdown">
+        <a class="nav-button" id="botao-tabelas">Classificação</a>
+        <div class="dropdown-content" id="menu-tabelas">
+          <ul class="lista-tabelas">
+            <li><a href="/web/seriea.html"><img src="/assets/seriea.png" alt="Série A"><span>Série A</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#" class="nav-button" id="botao-equipes">Equipes ▾</a>
+        <div class="dropdown-content" id="menu-equipes">
+          <ul class="lista-times">
+            <li><a href="/web/equipes/equipe-athletico-pr.html"><img src="../../assets/Athletico_Paranaense_(Logo_2019).svg.png" alt="Athletico-PR"><span>Athletico-PR</span></a></li>
+            <li><a href="/web/equipes/equipe-atletico-go.html"><img src="../../assets/Atletico_Goianiense.png" alt="Atlético-GO"><span>Atlético-GO</span></a></li>
+            <li><a href="/web/equipes/equipe-atletico-mg.html"><img src="../../assets/Atlétcomg.webp" alt="Atlético-MG"><span>Atlético-MG</span></a></li>
+            <li><a href="/web/equipes/equipe-bahia.html"><img src="../../assets/bahia.webp" alt="Bahia"><span>Bahia</span></a></li>
+            <li><a href="/web/equipes/equipe-botafogo.html"><img src="../../assets/botafogo.webp" alt="Botafogo"><span>Botafogo</span></a></li>
+            <li><a href="/web/equipes/equipe-bragantino.html"><img src="../../assets/bragantino.webp" alt="Bragantino"><span>Bragantino</span></a></li>
+            <li><a href="/web/equipes/equipe-ceara.html"><img src="../../assets/ceara.webp" alt="Ceará"><span>Ceará</span></a></li>
+            <li><a href="/web/equipes/equipe-corinthians.html"><img src="../../assets/corinthians-logo.webp" alt="Corinthians"><span>Corinthians</span></a></li>
+            <li><a href="/web/equipes/equipe-criciuma.html"><img src="../../assets/criciuma.png" alt="Criciúma"><span>Criciúma</span></a></li>
+            <li><a href="/web/equipes/equipe-cruzeiro.html"><img src="../../assets/cruzeiro.webp" alt="Cruzeiro"><span>Cruzeiro</span></a></li>
+            <li><a href="/web/equipes/equipe-cuiaba.html"><img src="../../assets/cuiaba.png" alt="Cuiabá"><span>Cuiabá</span></a></li>
+            <li><a href="/web/equipes/equipe-flamengo.html"><img src="../../assets/flamengo.webp" alt="Flamengo"><span>Flamengo</span></a></li>
+            <li><a href="/web/equipes/equipe-fluminense.html"><img src="../../assets/fluminense-football-club-logo-png_seeklogo-56026.webp" alt="Fluminense"><span>Fluminense</span></a></li>
+            <li><a href="/web/equipes/equipe-fortaleza.html"><img src="../../assets/fortaleza-logo.webp" alt="Fortaleza"><span>Fortaleza</span></a></li>
+            <li><a href="/web/equipes/equipe-gremio.html"><img src="../../assets/gremio-vector-logo-400x400.webp" alt="Grêmio"><span>Grêmio</span></a></li>
+            <li><a href="/web/equipes/equipe-internacional.html"><img src="../../assets/internacional-logo-0.webp" alt="Internacional"><span>Internacional</span></a></li>
+            <li><a href="/web/equipes/equipe-juventude.html"><img src="../../assets/juventude-logo-escudo-2.webp" alt="Juventude"><span>Juventude</span></a></li>
+            <li><a href="/web/equipes/equipe-mirassol.html"><img src="../../assets/Mirassol_FC_logo.webp" alt="Mirassol"><span>Mirassol</span></a></li>
+            <li><a href="/web/equipes/equipe-palmeiras.html"><img src="../../assets/palmeiras-logo-0.webp" alt="Palmeiras"><span>Palmeiras</span></a></li>
+            <li><a href="/web/equipes/equipe-santos.html"><img src="../../assets/santos-logo-0.webp" alt="Santos"><span>Santos</span></a></li>
+            <li><a href="/web/equipes/equipe-sao-paulo.html"><img src="../../assets/sao-paulo-4096.webp" alt="São Paulo"><span>São Paulo</span></a></li>
+            <li><a href="/web/equipes/equipe-sport.html"><img src="../../assets/sport-recife-logo-escudo-13.webp" alt="Sport Recife"><span>Sport Recife</span></a></li>
+            <li><a href="/web/equipes/equipe-vasco.html"><img src="../../assets/vasco-da-gama-logo-png-transparent.webp" alt="Vasco da Gama"><span>Vasco da Gama</span></a></li>
+            <li><a href="/web/equipes/equipe-vitoria.html"><img src="../../assets/vitoria-2.webp" alt="Vitória"><span>Vitória</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <a class="nav-button" href="/web/transferencias.html">Transferências</a>
+      <a class="nav-button" href="/web/estatisticas.html">Estatísticas</a>
+      <a class="nav-button" href="/web/selecionar-time.html">Monte Seu Time</a>
+    </nav>
+    <div class="avatar-wrapper" id="avatarBtn">
+      <img src="/assets/perfilsemfoto.jpeg" alt="Foto do usuário" class="avatar-perfil" />
+    </div>
+    <div class="dropdown-menu" id="dropdownMenu">
+      <div class="user-info">
+        <img src="/assets/perfilsemfoto.jpeg" alt="Foto do usuário" class="avatar-perfil dropdown-avatar" />
+        <div><strong>Usuario</strong><br></div>
+      </div>
+      <hr>
+      <a href="#">Meus Dados</a>
+      <a href="/web/config_adm.html">Configurações</a>
+      <a href="/index.html" class="logout">Sair</a>
+    </div>
+    
+  </header>
+
+
+  <section class="section">
+    <h2>Destaques</h2>
+    <!-- Carrossel -->
+    <!-- Slider main container -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../assets/palmeirasxcorinthianss.jpeg"
+            alt="Jogador do Palmeiras comemorando gol contra o Corinthians">
+          <div class="carousel-caption-custom">
+            <h3>CLÁSSICO DECISIVO</h3>
+            <p>Palmeiras empata com o Corinthians em jogo emocionante e assume a ponta da tabela.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="../assets/Ney_Carrossel.jpg" alt="Neymar olhando para a câmera">
+          <div class="carousel-caption-custom">
+            <h3>NEYMAR DE VOLTA AO BRASIL?</h3>
+            <p>Craque revela desejo de retornar ao futebol brasileiro e agita o mercado da bola.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="../assets/LesãoBayern.png" alt="Jogador do Bayern de Munique sentindo lesão">
+          <div class="carousel-caption-custom">
+            <h3>LESÃO PREOCUPA GIGANTE ALEMÃO</h3>
+            <p>Jovem promessa do Bayern de Munique se lesiona e pode desfalcar a equipe por meses.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </section>
+
+  <section class="section">
+    <h2>Jogos da Rodada</h2>
+    <div class="rodada-header">
+      <h3>Rodada 25</h3>
+    </div>
+    <div class="rodada-carousel">
+      <button class="nav-arrow" id="scroll-left">‹</button>
+      <div class="jogos-wrapper" id="jogos-wrapper">
+        <div class="jogos-grid" id="jogos-da-rodada-container">
+        </div>
+      </div>
+      <button class="nav-arrow" id="scroll-right">›</button>
+    </div>
+  </section>
+
+  <div id="modal-jogo-detalhes" class="modal-jogo">
+    <div class="modal-jogo-content">
+      <span class="modal-jogo-close">&times;</span>
+      <div class="modal-jogo-header">
+        <div id="modal-header-casa" class="modal-header-time">
+        </div>
+        <div id="modal-header-placar" class="modal-header-placar">
+        </div>
+        <div id="modal-header-visitante" class="modal-header-time">
+        </div>
+      </div>
+      <div class="modal-jogo-body">
+        <div class="info-section">
+          <h3>Detalhes da Partida</h3>
+          <p><strong>Transmissão:</strong> <span id="modal-transmissao"></span></p>
+          <p><strong>Local:</strong> <span id="modal-local"></span></p>
+          <p><strong>Árbitro:</strong> <span id="modal-arbitro"></span></p>
+        </div>
+        <div class="info-section escalacao-section">
+          <h3>Escalações</h3>
+          <div class="escalacao-container">
+            <div class="escalacao-time">
+              <h4>Mandante</h4>
+              <ul id="modal-escalacao-casa"></ul>
+            </div>
+            <div class="escalacao-time">
+              <h4>Visitante</h4>
+              <ul id="modal-escalacao-visitante"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <h2>Feed de notícias</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="../assets/Neymar-Santos-scaled-aspect-ratio-512-320.webp" class="foto-card1"
+          alt="Neymar com a camisa do Santos">
+        <h3>"Minha Casa": Neymar Declara Amor ao Santos</h3>
+        <p>Em entrevista, craque relembra momentos no clube e não descarta um retorno futuro para encerrar a carreira.
+        </p>
+      </div>
+      <div class="card">
+        <img src="../assets/palmeirasxcorinthianss.jpeg" class="foto-card1" alt="Jogador comemorando gol em clássico">
+        <h3>Empate Épico no Clássico Paulista!</h3>
+        <p>Com um jogador a menos, time da casa busca resultado improvável nos acréscimos e incendeia o campeonato.</p>
+      </div>
+      <div class="card">
+        <img src="../assets/LesãoBayern.png" class="foto-card1"
+          alt="Jogador do Bayern de Munique sentindo lesão no campo">
+        <h3>Alerta Vermelho em Munique</h3>
+        <p>Principal meia do Bayern de Munique sofre lesão e vira dúvida para a fase final da Champions League.</p>
+      </div>
+      <div class="card">
+        <img src="../assets/03_Carrossel_Inicial.png" class="foto-card1" alt="Campo de futebol com marcações táticas">
+        <h3>A Tática do Momento: A Saída de 3</h3>
+        <p>Entenda como os principais times do Brasil estão utilizando a saída de bola com três defensores para criar
+          jogadas.</p>
+      </div>
+      <div class="card">
+        <img src="../assets/02_Carrossel_Inicial.png" class="foto-card1"
+          alt="Jogador dominando a bola no meio de campo">
+        <h3>Mercado da Bola: Janela de Transferências Agita Clubes</h3>
+        <p>Clubes da Série A correm contra o tempo para registrar novos reforços antes do fechamento da janela.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/src/script.js"></script>
+
+</body>
+
+</html>
